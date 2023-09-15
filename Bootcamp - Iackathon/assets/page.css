@@ -1,0 +1,92 @@
+.Header {
+    background-image: linear-gradient(270deg, #e0e8ff 0, #6898f5 50%, #0054d4 100%);
+    height: auto;
+    width: auto;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.8s;
+    width: 100%;
+    overflow: hidden;
+}
+
+.texto-bonito {
+    font-family: 'Arial, sans-serif';
+    font-size: 2em;
+    color: #393e46;
+    text-transform: uppercase;
+}
+
+.aside {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #750e0e;
+    padding: 20px;
+}
+
+.content {
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+#aside {
+    width: 60px;
+    height: 100vh;
+    background-image: linear-gradient(270deg, #e0e8ff 0, #6898f5 50%, #0054d4 100%);
+    color: #fff;
+    position: fixed;
+    top: 100px; /* Ajustado para que no se superponga con el header */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+}
+
+#aside:hover {
+    width: 200px;
+}
+
+#aside .menu-item {
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    border: none;
+    background: none;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+#aside .menu-item:hover {
+    background-color: #444;
+}
+
+#aside .menu-icon {
+    margin-right: 10px;
+}
+
+#aside .menu-text {
+    display: none;
+}
+
+#aside:hover .menu-text {
+    display: block;
+}
+
+#graph {
+    margin-left: 60px;
+    padding: 20px;
+}
