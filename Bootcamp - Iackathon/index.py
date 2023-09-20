@@ -4,12 +4,19 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import os
 
+import pandas as pd
+import numpy as np
+
 app = dash.Dash(__name__)
 app.css.append_css({
     'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'
 })
 
 Path_images = "assets/logos"
+#planning = pd.read_csv("../planning2015-2023_M.csv")
+#tender = pd.read_csv("../tender2015-2023.csv")
+#releases  = pd.read_csv("../releases2015-2023.csv")
+#contracts  = pd.read_csv("../contracts2015-2023.csv")
 
 header = dbc.Row(
             [
@@ -38,7 +45,17 @@ aside = html.Div([
 ], id="aside", className="aside-closed")
 
 
-
+#Info = dbc.Container([
+#    dbc.Row([
+#        dbc.Col([
+#            dcc.Dropdown(
+#                id='OCID',
+#                options=sorted(contracts.NOMBRE.unique().tolist()),style={'margin-bottom': '30px'},
+#                value=sorted(contracts.NOMBRE.unique().tolist())[1]
+#            )
+#        ]),
+#        dbc.Col([])
+#    ]),])
 app.layout = html.Div([
     header,
     aside,
