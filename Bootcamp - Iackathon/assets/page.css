@@ -1,5 +1,5 @@
 .Header {
-    background-image: linear-gradient(270deg, #e0e8ff 0, #6898f5 50%, #0054d4 100%);
+    /*background-image: linear-gradient(270deg, #e0e8ff 0, #6898f5 50%, #0054d4 100%);*/
     height: auto;
     width: auto;
     display: flex;
@@ -12,12 +12,14 @@
     transition: all ease 0.8s;
     width: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .texto-bonito {
     font-family: 'Arial, sans-serif';
     font-size: 2em;
-    color: #393e46;
+    /*color: #393e46;*/
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -39,8 +41,8 @@
 #aside {
     width: 60px;
     height: 100vh;
-    background-image: linear-gradient(270deg, #e0e8ff 0, #6898f5 50%, #0054d4 100%);
-    color: #fff;
+    /*background-image: linear-gradient(270deg, #e0e8ff 0, #6898f5 50%, #0054d4 100%);*/
+    color: #000000;
     position: fixed;
     top: 100px; /* Ajustado para que no se superponga con el header */
     left: 0;
@@ -48,10 +50,12 @@
     flex-direction: column;
     align-items: center;
     transition: width 0.3s;
+    border-right: 2px solid #B0B0B0;
 }
 
 #aside:hover {
     width: 200px;
+    
 }
 
 #aside .menu-item {
@@ -63,7 +67,7 @@
     justify-content: flex-start;
     border: none;
     background: none;
-    color: #fff;
+    color: #000000;
     text-align: left;
     padding: 10px;
     box-sizing: border-box;
